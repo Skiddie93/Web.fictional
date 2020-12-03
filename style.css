@@ -475,7 +475,7 @@ width: 100%;
 margin-bottom:5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 
   body{
     width: 100vw;
@@ -598,11 +598,11 @@ transform: translateX(-50%);
 .herotxt h1{
 
 left: 0vw;
-top: 7vh;
+top: 10vh;
 width: auto;
 margin-left: 2vw;
-font-size:1.8rem;
-
+font-size:1.7rem;
+margin-bottom: 75px;
 font-weight: bold;
 }
 
@@ -610,10 +610,11 @@ font-weight: bold;
 
   left:100%;
   transform: translateX(-102%);
-  top: 5vh;
+  top: 0px;
   width: 80vw;
   margin-left: 0px;
   font-size: 0.8rem;
+  max-width: 75vw;
 
 
 
@@ -627,9 +628,9 @@ width: 100vw;
 left: 50vw;;
 bottom: default;
 top: 10vh;
-font-size: 1rem;
+font-size: 1.2rem;
 transform: translateX(-50%);
-margin: 0px;
+margin-bottom: 20px;
 
 
 }
@@ -657,7 +658,9 @@ margin-left: 0.6em;
 }
 
 .page2 img{
-display: none
+position: relative;
+grid-area: 1/1;
+bottom:0px;
 
 
 }
@@ -682,7 +685,7 @@ margin-top: 5vh ;
 
 .p2txt h2{
 margin-top: 4vh;
-font-size: 4rem;
+font-size: 3rem;
    }
 
 
@@ -695,11 +698,13 @@ left: 0px;
 margin: 0px;
 
 
+
 width: auto;
 font-size: 1.2rem;
 }
 .page3{
 height:auto;
+
  }
 .showcontainer h2{
 top: -15vh;
@@ -707,29 +712,36 @@ font-size: 10vw;
 
 }
 
-.page3 img{
-  display: none;
+.p3decor {
+  display: inline-block;
+  position: relative;
+top: 70px;
+left: 50vw;;
+height: auto;
+width: auto;
+margin-left: -125px;
 
+
+ }
+.p3decor img{
+height: 200px;
+width: 250px;
 
 }
 
-.showcontainer img{
-  display: block;
-
-   }
 
 
 .showcontainer{
 
   flex-direction: column;
   position: relative;
-  top: 25vh;
+  top:  50px;
   bottom: 0px;
   width: 98vw;
   height: auto;
-  left: 50%;
+  left: 50vw;
   margin: 0vw;
-  margin-bottom: 30vh;
+  margin-bottom: 100px;
 
   max-width: 85vw;
 
@@ -750,9 +762,9 @@ font-size: 10vw;
 
 }
 
-.page3 h2{
-font-size: 2.2rem;
-top: -16vh;
+.showcontainer h2{
+font-size: 2rem;
+top: -230px;
 
 }
 
