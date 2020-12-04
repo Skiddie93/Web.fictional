@@ -81,7 +81,7 @@ function change(){
           document.getElementById('ani2').style.color = "#2d2d2d";
 
           setTimeout(function(){
-            if (w>768) {
+            if (w>800) {
               document.getElementById("ani2").style.marginLeft = "5.05em";
             }
 

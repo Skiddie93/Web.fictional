@@ -592,17 +592,18 @@ transform: translateX(-50%);
 .herotxt{
   position: static;
   height: auto;
+  top: 10vh;
 }
 
 
 .herotxt h1{
 
 left: 0vw;
-top: 10vh;
+top: inherit;
 width: auto;
 margin-left: 2vw;
 font-size:1.7rem;
-margin-bottom: 75px;
+margin-bottom: 0px;
 font-weight: bold;
 }
 
@@ -610,12 +611,12 @@ font-weight: bold;
 
   left:100%;
   transform: translateX(-102%);
-  top: 0px;
+  top: inherit;
   width: 80vw;
   margin-left: 0px;
   font-size: 0.8rem;
   max-width: 75vw;
-
+  margin-bottom: 50px;
 
 
 }
@@ -685,8 +686,9 @@ margin-top: 5vh ;
 
 .p2txt h2{
 margin-top: 4vh;
-font-size: 3rem;
+font-size: 2.1rem;
    }
+
 
 
 .p2btn p{
@@ -696,11 +698,8 @@ width: auto;
 top: 0px;
 left: 0px;
 margin: 0px;
-
-
-
 width: auto;
-font-size: 1.2rem;
+font-size: 1.5rem;
 }
 .page3{
 height:auto;
