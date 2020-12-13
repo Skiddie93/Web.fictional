@@ -483,9 +483,81 @@ margin-bottom:5px;
 /* Projects page___________________________________________________________________________________________________________________________ */
 
 .projectspage1{
-
-
+position: relative;
+width: 100vw;
+height: 100vh;
 }
+
+.project1container{
+
+  position: absolute;
+  width: 75%;
+  top: 20vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+ .projectspage1 h1{
+   position: relative;
+   display: inline-block;
+   transform: translateX(-50%);
+   width: auto;
+   background-color: #5193F4;
+   border-radius: 0px solid;
+   border-radius: 8px;
+   margin-bottom:20px;
+   padding: 10px;
+   font-size: 3.5vw;
+   font-weight: normal;
+
+ }
+
+  .projectspage1 h2{
+    background-color: #C8DBFB;
+    border-radius: 0px solid;
+    border-radius: 8px;
+    font-weight: normal;
+    padding: 10px;
+    font-size: 1.5vw
+  }
+
+  .projectsphotoview{
+    position: absolute;
+    height: 40vh;
+    width: 40vw;
+    background-color: red;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -45vh;
+    border: 5px solid black;
+    overflow: hidden;
+
+  }
+
+  .projectsphotoview button{
+    position: relative;
+    top: -100px
+  }
+
+  .carosel{
+    display: flex;
+    width: inherit;
+    height: inherit;
+    background-color: blue;
+
+    justify-content: flex-start;
+
+  }
+
+  .carosel img{
+    width: 100%
+
+  }
+
 
 @media screen and (max-width: 800px) {
 
