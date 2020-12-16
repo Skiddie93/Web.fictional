@@ -529,19 +529,16 @@ height: 100vh;
     position: absolute;
     height: 40vh;
     width: 40vw;
-    background-color: red;
+    background-color: #F2F5FC;
     left: 50%;
     transform: translateX(-50%);
     bottom: -45vh;
-    border: 5px solid black;
+    border: 5px solid #C8DBFB;
     overflow: hidden;
+    user-select: none;
 
   }
 
-  .projectsphotoview button{
-    position: relative;
-    top: -100px
-  }
 
   .carosel{
     display: flex;
@@ -556,6 +553,28 @@ height: 100vh;
   .carosel img{
     width: 100%
 
+  }
+
+  .nextbutton{
+ position:absolute;
+ width:4rem;
+ height:4rem;
+ top:50%;
+ right: 5px;
+ transform: rotateY(180deg) translateY(-50%);
+ color: rgba(0, 0, 0, 0.2);
+ cursor: pointer;
+  }
+
+  .previousbutton{
+    position:absolute;
+    width:4rem;
+    height:4rem;
+    top:50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
 
 
