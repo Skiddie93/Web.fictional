@@ -10,7 +10,13 @@ const allCaroselss = {
 
             images: document.getElementById("carosel2Slide").childElementCount,
             count: 1
-            }
+          },
+
+        carosel3: {
+
+          images: document.getElementById("carosel3Slide").childElementCount,
+          count: 1
+                }
  };
 
 

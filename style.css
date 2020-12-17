@@ -482,17 +482,28 @@ margin-bottom:5px;
 
 /* Projects page___________________________________________________________________________________________________________________________ */
 
-.projectspage1{
+.projectspage{
 position: relative;
 width: 100vw;
 height: 100vh;
+color: #2d2d2d;
 }
 
-.project1container{
+.projectspage hr {
+
+position: absolute;
+ border-top: 3px solid #2d2d2d;
+ width: 25vw;
+ left: 50vw;
+ transform: translateX(-50%);
+
+}
+
+.projectcontainer{
 
   position: absolute;
+  height: inherit;
   width: 75%;
-  top: 20vh;
   left: 50vw;
   transform: translateX(-50%);
   display: flex;
@@ -500,42 +511,82 @@ height: 100vh;
   justify-content: flex-start;
 }
 
+.projectcontainer p{
+  position: absolute;
+  display: block;
+  font-family: 'Noto Mono';
+  left: 50%;
+  top: 4%;
+  transform: translateX(-50%);
+  background-color: #00B19E;
+  padding:10px;
+  border-radius: 8px;
+  font-size: 2vw;
 
- .projectspage1 h1{
+
+}
+
+  .projectcontainer p:hover{
+  color: #6b6b6b;
+  background-color:#7ee8d4;
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+
+ .projectspage h1{
    position: relative;
    display: inline-block;
    transform: translateX(-50%);
    width: auto;
    background-color: #5193F4;
-   border-radius: 0px solid;
+   border: 0px;
    border-radius: 8px;
    margin-bottom:20px;
    padding: 10px;
    font-size: 3.5vw;
    font-weight: normal;
+   top: 15vh;
 
  }
 
-  .projectspage1 h2{
+  .projectspage h2{
+    position: relative;
+    top: 15vh;
     background-color: #C8DBFB;
     border-radius: 0px solid;
     border-radius: 8px;
     font-weight: normal;
     padding: 10px;
     font-size: 1.5vw
+
+  }
+
+
+  .rest{
+    position:  relative;
+    top: 17vh
   }
 
   .projectsphotoview{
-    position: absolute;
+    position: relative;
     height: 40vh;
     width: 40vw;
     background-color: #F2F5FC;
     left: 50%;
+    top: 15vh;
     transform: translateX(-50%);
-    bottom: -45vh;
-    border: 5px solid #C8DBFB;
+    bottom: 30%;
+    border: 10px solid #C8DBFB;
+    border-radius: 8px;
     overflow: hidden;
     user-select: none;
+    margin: 10px;
 
   }
 
@@ -562,7 +613,7 @@ height: 100vh;
  top:50%;
  right: 5px;
  transform: rotateY(180deg) translateY(-50%);
- color: rgba(0, 0, 0, 0.2);
+ color: rgba(255, 255, 255, 0.2);
  cursor: pointer;
   }
 
@@ -573,7 +624,7 @@ height: 100vh;
     top:50%;
     left: 5px;
     transform: translateY(-50%);
-    color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
   }
 
@@ -696,13 +747,14 @@ border-bottom: 2px solid #5193F4;
   justify-content: space-around;
   align-items: center;
   height: auto;
+  min-height: 100vh;
 
 }
 
 .herotxt img {
-  position: static;
-  left: 50vw;
-  top: 100vh;
+  position: relative;
+  left: 0vw;
+  bottom: 0vh;
   height: 300px;
   width: 400px;
 

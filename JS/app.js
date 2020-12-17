@@ -120,27 +120,3 @@ function change(){
 
 
  document.getElementById("body").addEventListener("wheel", change);
-
-
-//Phone Scripts____________________________________________________________________________
-
-
-
-function menuPop(){
-
-  var burger = document.getElementById("links");
-     burger.classList.toggle("burger-active");
-
-
-
-
-
-
-
-
-
-
-}
-
-
-document.getElementById("burgerMenu").addEventListener("click", menuPop);
