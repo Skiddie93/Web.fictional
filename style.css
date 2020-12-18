@@ -482,26 +482,33 @@ margin-bottom:5px;
 
 /* Projects page___________________________________________________________________________________________________________________________ */
 
-.projectspage{
-position: relative;
+.projectspage, .projectspage2{
+position: static;
 width: 100vw;
 height: 100vh;
 color: #2d2d2d;
+
 }
 
-.projectspage hr {
 
-position: absolute;
+
+
+.projectspage hr, .projectspage2 hr {
+
+position: relative;
  border-top: 3px solid #2d2d2d;
  width: 25vw;
  left: 50vw;
- transform: translateX(-50%);
+ transform:translateX(-50%);
+
+
+
 
 }
 
 .projectcontainer{
 
-  position: absolute;
+  position: relative;
   height: inherit;
   width: 75%;
   left: 50vw;
@@ -512,16 +519,16 @@ position: absolute;
 }
 
 .projectcontainer p{
-  position: absolute;
-  display: block;
+  position: relative;
+  display: inline-block;
   font-family: 'Noto Mono';
   left: 50%;
-  top: 4%;
   transform: translateX(-50%);
   background-color: #00B19E;
   padding:10px;
   border-radius: 8px;
   font-size: 2vw;
+  margin-bottom: 30px
 
 
 }
@@ -555,7 +562,24 @@ position: absolute;
 
  }
 
-  .projectspage h2{
+ .projectspage2 h1{
+   position: relative;
+   display: inline-block;
+   left:100%;
+   transform: translateX(-50%);
+   width: auto;
+   background-color: #5193F4;
+   border: 0px;
+   border-radius: 8px;
+   margin-bottom:20px;
+   padding: 10px;
+   font-size: 3.5vw;
+   font-weight: normal;
+   top: 15vh;
+
+ }
+
+  .projectspage h2, .projectspage2 h2{
     position: relative;
     top: 15vh;
     background-color: #C8DBFB;
@@ -570,7 +594,7 @@ position: absolute;
 
   .rest{
     position:  relative;
-    top: 17vh
+    top: 0vh
   }
 
   .projectsphotoview{
@@ -581,12 +605,13 @@ position: absolute;
     left: 50%;
     top: 15vh;
     transform: translateX(-50%);
-    bottom: 30%;
+
     border: 10px solid #C8DBFB;
     border-radius: 8px;
     overflow: hidden;
     user-select: none;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 20vh;
 
   }
 
@@ -942,5 +967,70 @@ font-size: 2rem;
 top: -230px;
 
 }
+
+/*ProjectsPage__________________________________________________________________________________________________________________________________*/
+
+.projectspage, .projectspage2{
+height: auto;
+}
+
+.projectspage h2, .projectspage2 h2{
+  font-size: 1rem;
+
+  margin-bottom: 20px;
+
+}
+
+.projectspage h1{
+  float: left;
+  right: 10%;
+  transform: translateX(0%);
+  font-size: 2rem;
+
+}
+
+.projectspage2 h1{
+
+float: right;
+left: 10%;
+transform: translateX(0%);
+font-size: 2rem
+
+}
+
+.projectsphotoview{
+  position: relative;
+  height: 20rem;
+  width: 80vw;
+  background-color: #F2F5FC;
+  left: 50%;
+  top: 15vh;
+  transform: translateX(-50%);
+
+  border: 10px solid #C8DBFB;
+  border-radius: 8px;
+  overflow: hidden;
+  user-select: none;
+  margin-top: 10px;
+  margin-bottom: 20vh;
+
+}
+
+.projectcontainer p{
+
+  font-size: 1.5rem;
+}
+
+.projectspage hr, .projectspage2 hr {
+
+
+ width: 50vw;
+
+
+
+
+}
+
+
 
  }
