@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </style>
+    <title></title>
+  </head>
+  <body id="body">
+
+    <div class="nav">
+
+      <div class="burgermenu" id="burgerMenu">
+
+        <svg style="width:4vh;height:4vh" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+</svg>
+
+      </div>
+
+<div class="logo">
+  <svg style="width:4vh;height:4vh" viewBox="0 0 24 24">
+    <path fill=#2b2b2b d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+    <p>Dev Solutions</p>
+</svg>
+
+
+</div>
+
+
+<div class="links" id="links">
+
+
+
+          <ul>
+          <li id="phonelinks"><a href="./projects.html">Projects </a></li>
+          <li id="phonelinks"><a href="#">Else</a></li>
+          <li id="phonelinks"><a href="#">Other</a></li>
+          <li id="phonelinks"><a href="#">Different</a></li>
+          </ul>
+
+</div>
+
+
+    </div>
+
+    <div class="lichessMain">
+
+      <div class="lcLeft">
+
+        <h1>Lichess</h1>
+
+        <img src="./media/prev/pLichessLogo.png" alt="">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <a href="#">lichess.com</a>
+      </div>
+
+      <div class="lcRight">
+
+        <div class="gallery">
+
+          
+      <div class="gridItem"><img src="./media/prev/project3p1.png" alt=""></div>
+      <div class="gridItem"><img src="./media/prev/project3p2.png" alt=""></div>
+      <div class="gridItem"><img src="./media/prev/project3p3.png" alt=""></div>
+      <div class="gridItem"><img src="./media/prev/project3p4.png" alt=""></div>
+      <div class="gridItem"><img src="./media/prev/project3p5.png" alt=""></div>
+      <div class="gridItem"><img src="./media/prev/project3p2.png" alt=""></div>
+      <div class="gridItem"><img src="./media/prev/project3p4.png" alt=""></div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+</body>
+<script src="./JS/phonemenu.js"></script>
+</html>
