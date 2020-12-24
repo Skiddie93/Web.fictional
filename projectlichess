@@ -47,6 +47,25 @@
 
 
     </div>
+      <div id="overlay" class="previewOverlay">
+         <svg class="exitOverlay" id="exitOverlay" viewBox="0 0 24 24">
+      <path fill="#255255255" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+</svg>
+<svg   class="nextPicture" id="nextPicture" viewBox="0 0 24 24">
+<path fill="currentColor" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+</svg>
+
+
+<svg   class="previousPicture" id="previousPicture" viewBox="0 0 24 24">
+<path fill="currentColor" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+</svg>
+
+          <div class="displayItem" id="displayItem">
+
+          </div>
+
+  </div>
+
 
     <div class="lichessMain">
 
@@ -62,9 +81,9 @@
 
       <div class="lcRight">
 
-        <div class="gallery">
+        <div class="gallery" id="gallery" >
 
-          
+
       <div class="gridItem"><img src="./media/prev/project3p1.png" alt=""></div>
       <div class="gridItem"><img src="./media/prev/project3p2.png" alt=""></div>
       <div class="gridItem"><img src="./media/prev/project3p3.png" alt=""></div>
@@ -80,6 +99,9 @@
 
     </div>
 
+
+
 </body>
 <script src="./JS/phonemenu.js"></script>
+<script src="./JS/picview.js"></script>
 </html>
