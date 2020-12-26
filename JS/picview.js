@@ -32,7 +32,7 @@ function next(){
 for (var i = 0; i < gallery.children.length; i++) {
   if (eventNode === gallery.children[i]) {
 
-    if (i == 6) {
+    if (i == gallery.children.length-1) {
       i=-1
     }
     eventNode= gallery.children[i+1];

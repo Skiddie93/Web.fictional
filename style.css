@@ -621,7 +621,6 @@ position: relative;
     width: inherit;
     height: inherit;
     background-color: blue;
-
     justify-content: flex-start;
 
   }
@@ -654,9 +653,9 @@ position: relative;
   }
 
 
-  /*Lichess projedt___________________________________________________________________________________________ */
+  /*Projects Feature___________________________________________________________________________________________ */
 
-  .lichessMain{
+  .featuredMain{
 
     display: flex;
     flex-direction: row;
@@ -673,6 +672,7 @@ position: relative;
     align-items: center;
     height: 100%;
     max-height: 100vh;
+
     width: 50vw;;
     background-color: #C8DBFB;
 
@@ -763,20 +763,20 @@ position: relative;
   }
 
 .previewOverlay{
-position: fixed;
+position: absolute;
 z-index: -2;
-height:100vh;
-width: 100vw;
+height:0vh;
+width: 0vw;
 background-color: rgba(0, 0, 0, 0.0);
-
 transition: background-color ease 1s;
 }
 
  .exitOverlay{
 position: absolute;
-height: 40px;
-width: 40px;
+height: 50px;
+width: 50px;
 fill: white;
+padding: 10px;
 
 }
 
@@ -787,17 +787,17 @@ z-index: 3;
 height:100vh;
 width: 100vw;
 background-color: rgba(0, 0, 0, 0.7);
-transition: background-color ease 1s;
+transition: background-color ease 0.5s;
 }
 
 
 .displayItem{
-  position: absolute;
-width: 50vw;
-height: 50vh;
-top: 50vh;
-left: 50vw;
-transform: translate(-50%,-50%);
+position: absolute;
+width: 60%;
+height: 60%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%)
 
 
 
@@ -806,32 +806,38 @@ transform: translate(-50%,-50%);
 
 .displayItem img {
 
-  object-fit: fit;
+  object-fit: stretch;
   width: 100%;
   max-height: 100%;
+  min-height: 100%;
+  user-select: none;
+
 
 
 }
 
 .nextPicture{
 position: absolute;
-top: 50vh;
+top: 50%;
 right: 0px;
-height: 50px;
-width: 50px;
-color: white;
-transform: rotateY(180deg);
+height: 100px;
+width: 100px;
+transform: rotateY(180deg) translateY(-50%);;
+user-select: none;
 cursor: pointer;
+fill: white;
+
 }
 
 .previousPicture{
 position: absolute;
-top: 50vh;
-left: 0px;
-height: 50px;
-width: 50px;
-color: white;
+top: 50%;
+left: 0vw;
+height: 100px;
+width: 100px;
 cursor: pointer;
+user-select: none;
+fill: white;
 }
 
 
@@ -841,7 +847,7 @@ cursor: pointer;
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 812px) {
 
   body{
     width: 100vw;
@@ -1204,20 +1210,64 @@ font-size: 2rem
 }
 
 .projectcontainer p{
-
   font-size: 1.5rem;
 }
 
 .projectspage hr, .projectspage2 hr {
-
-
  width: 50vw;
+}
+
+/* Projects Feature____________________________________________________________________*/
+
+.featuredMain{
 
 
+  flex-direction: column;
+  height: auto;
+
+}
+
+.lcLeft{
+  position: static;
+  height: auto;
+  width: 100vw;
+  max-height: none;
+  min-height: 100vh;
 
 
 }
 
+.lcLeft a {
+  position: static;
+  top: 7vh;
+  margin: 50px;
+   }
+
+   .lcRight{
+     position: static;
+     transform: translateX(0%);
+     height: auto;
+     width: 100vw;
+     max-width: 100%;
+
+   }
+
+   .gallery{
+     margin-left: 40px;
+     margin-right: 40px;
+     display: grid;
+     margin-top: 50px;
+     grid-template-columns: 1fr;
+     grid-row-gap: 10px;
+     grid-column-gap: 10px;
+   }
+
+
+   .nextPicture, .previousPicture{
+   height: 60px;
+   width: 60px;
+
+   }
 
 
  }
