@@ -3,6 +3,7 @@ padding: 0;
 margin: 0;
 
 
+
 }
 
 html, body {
@@ -104,6 +105,7 @@ left: 10vh;
 cursor: default;
 
 }
+
 
 .burgermenu{
   padding-top: 0.0vh;
@@ -518,7 +520,7 @@ position: relative;
   justify-content: flex-start;
 }
 
-.projectcontainer p{
+.projectcontainer a{
   position: relative;
   display: inline-block;
   font-family: 'Noto Mono';
@@ -528,12 +530,13 @@ position: relative;
   padding:10px;
   border-radius: 8px;
   font-size: 2vw;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  text-decoration:none;
 
 
 }
 
-  .projectcontainer p:hover{
+  .projectcontainer a:hover{
   color: #6b6b6b;
   background-color:#7ee8d4;
   cursor: pointer;
@@ -664,7 +667,7 @@ position: relative;
 
   }
 
-  .lcLeft{
+  .sideLeft{
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -679,7 +682,7 @@ position: relative;
 
   }
 
-  .lcLeft h1{
+  .sideLeft h1{
 
     font-size: 3rem;
     font-family: 'Noto Sans JP';
@@ -690,7 +693,7 @@ position: relative;
 
   }
 
-  .lcLeft img {
+  .sideLeft img {
 
     height: 10vh;
     width: 10vh;
@@ -698,7 +701,7 @@ position: relative;
 
   }
 
-  .lcLeft p {
+  .sideLeft p {
     text-align: center;
     padding-left: 15%;
     padding-right: 15%;
@@ -708,7 +711,7 @@ position: relative;
 
      }
 
-     .lcLeft a {
+     .sideLeft a {
        position: relative;
        top: 7vh;
        width: auto;
@@ -721,7 +724,7 @@ position: relative;
        text-decoration:none;
         }
 
-        .lcLeft a:hover{
+        .sideLeft a:hover{
           color: #6b6b6b;
           background-color:#7ee8d4;
           cursor: pointer;
@@ -729,7 +732,7 @@ position: relative;
 
         }
 
-    .lcRight{
+    .sideRight{
       transform: translateX(100%);
       height: auto;
       width: 50%;
@@ -777,6 +780,7 @@ height: 50px;
 width: 50px;
 fill: white;
 padding: 10px;
+cursor: pointer;
 
 }
 
@@ -1227,7 +1231,7 @@ font-size: 2rem
 
 }
 
-.lcLeft{
+.sideLeft{
   position: static;
   height: auto;
   width: 100vw;
@@ -1237,13 +1241,13 @@ font-size: 2rem
 
 }
 
-.lcLeft a {
+.sideLeft a {
   position: static;
   top: 7vh;
   margin: 50px;
    }
 
-   .lcRight{
+   .sideRight{
      position: static;
      transform: translateX(0%);
      height: auto;
