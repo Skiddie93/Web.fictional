@@ -6,6 +6,11 @@ margin: 0;
 
 }
 
+@font-face {
+  font-family:"Noto Mono";
+  src: url("fonts/NotoMono.ttf") format("truetype");
+}
+
 html, body {
 margin: 0;
 padding:0;
@@ -138,7 +143,6 @@ width: 50vw;
 bottom: 20vh;
 transform: translateY(25%);
 
-
 }
 
 .herotxt{
@@ -164,7 +168,7 @@ transform: translateY(25%);
   border-radius:8px;
   width: auto;
   font-weight: normal;
-
+z-index: 1;
 }
 
 .herotxt h2{
@@ -213,6 +217,7 @@ width: auto;
 
 .ani3{
 width: auto;
+z-index: 5;
 
 }
 
