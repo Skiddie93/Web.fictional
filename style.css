@@ -487,7 +487,7 @@ margin-bottom:5px;
 .projectspage, .projectspage2{
 position: static;
 width: 100vw;
-height: 100vh;
+height: auto;
 color: #2d2d2d;
 
 }
@@ -512,7 +512,7 @@ position: relative;
 
   position: relative;
   height: inherit;
-  width: 75%;
+  width: 65%;
   left: 50vw;
   transform: translateX(-50%);
   display: flex;
@@ -576,7 +576,7 @@ position: relative;
    border-radius: 8px;
    margin-bottom:20px;
    padding: 10px;
-   font-size: 3.5vw;
+   font-size: 3.4vw;
    font-weight: normal;
    top: 15vh;
 
@@ -826,7 +826,7 @@ top: 50%;
 right: 0px;
 height: 100px;
 width: 100px;
-transform: rotateY(180deg) translateY(-50%);;
+transform: rotateY(180deg) translateY(-50%);
 user-select: none;
 cursor: pointer;
 fill: white;
@@ -842,6 +842,7 @@ width: 100px;
 cursor: pointer;
 user-select: none;
 fill: white;
+transform: translateY(-50%);
 }
 
 
@@ -1169,6 +1170,7 @@ top: -230px;
 
 .projectspage, .projectspage2{
 height: auto;
+width: 100%;
 }
 
 .projectspage h2, .projectspage2 h2{
@@ -1191,7 +1193,8 @@ height: auto;
 float: right;
 left: 10%;
 transform: translateX(0%);
-font-size: 2rem
+font-size: 1.9rem;
+
 
 }
 
@@ -1221,6 +1224,12 @@ font-size: 2rem
  width: 50vw;
 }
 
+.projectcontainer a{
+
+  font-size: 1.5rem;
+
+}
+
 /* Projects Feature____________________________________________________________________*/
 
 .featuredMain{
@@ -1237,8 +1246,15 @@ font-size: 2rem
   width: 100vw;
   max-height: none;
   min-height: 100vh;
+}
 
+.sideLeft p {
 
+  font-size: 1rem;
+}
+.sideLeft h1 {
+
+  text-align: center;
 }
 
 .sideLeft a {
@@ -1268,8 +1284,8 @@ font-size: 2rem
 
 
    .nextPicture, .previousPicture{
-   height: 60px;
-   width: 60px;
+   height: 50px;
+   width: 50px;
 
    }
 
