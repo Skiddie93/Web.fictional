@@ -89,6 +89,12 @@ align-items: center;
 
 }
 
+.aboutuslink a{
+
+border-bottom: 3px solid #00AD9F;
+
+}
+
 .links{
 display: flex;
 align-items: center;
@@ -193,7 +199,7 @@ position: absolute;
 color: #2b2b2b;
 bottom: 20vh;
 left: 15vw;
-
+z-index: 1;
  }
 
 
@@ -852,10 +858,72 @@ transform: translateY(-50%);
 
 
 
+/*About us_____________________________________________________________________________________________________________________________*/
 
 
 
+.aboutusPage{
 
+position: relative;
+display: flex;
+justify-content: center;
+flex-direction: row;
+align-items: center;
+height: 90vh;
+width: 90vw;
+top: 10vh;
+left: 50vw;
+transform: translateX(-50%);
+
+
+}
+
+.aboutDescription{
+width:50%;
+overflow: hidden;
+margin-right: 10px;
+
+
+}
+
+.aboutDescription p{
+  border-bottom: 3px solid;
+border-left: 3px solid;
+font-size: 4vh;
+padding: 20px;
+color: #2d2d2d;
+
+animation: transitionLeft 5s
+
+}
+
+.aboutPicture{
+  width:50%;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.aboutPicture p{
+  border-top: 3px solid;
+border-right: 3px solid;
+font-size: 4vh;
+padding: 20px;
+color: #2d2d2d;
+
+animation: transitionRight 5s
+
+}
+
+
+@keyframes transitionLeft {
+  0%   {transform: translateX(100%);}
+  100% {transform: translateX(0%);}
+}
+
+@keyframes transitionRight {
+  0%   {transform: translateX(-100%);}
+  100% {transform: translateX(0%);}
+}
 
 @media screen and (max-width: 812px) {
 
@@ -928,9 +996,12 @@ z-index: 3;
 
 }
 
+.aboutuslink a{
+  border-bottom: 0px solid;
+  background-color: #00AD9F;
+  border-radius: 8px;
 
-
-
+}
 
 
 
