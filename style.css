@@ -868,60 +868,107 @@ position: relative;
 display: flex;
 justify-content: center;
 flex-direction: row;
-align-items: center;
-height: 90vh;
-width: 90vw;
-top: 10vh;
+align-items: flex-end;
+height: 70vh;
+width: 80vw;
 left: 50vw;
+top: 0vh;
 transform: translateX(-50%);
 
 
 }
 
 .aboutDescription{
+
+align-items: center;
 width:50%;
 overflow: hidden;
-margin-right: 10px;
+
+
 
 
 }
 
 .aboutDescription p{
-  border-bottom: 3px solid;
-border-left: 3px solid;
-font-size: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+border-bottom: 5px solid #F24959;
+border-left: 5px solid #F24959;
+height: 50vh;
+width: 85%;
+font-size: 1.4em;
 padding: 20px;
 color: #2d2d2d;
-
-animation: transitionLeft 5s
+transition: 1s;
+animation: transitionLeft 3s
 
 }
 
 .aboutPicture{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
   width:50%;
   overflow: hidden;
-  margin-left: 10px;
+
 }
 
-.aboutPicture p{
-  border-top: 3px solid;
-border-right: 3px solid;
-font-size: 4vh;
+.photoDrawer{
+  display: flex;
+  border-top: 5px solid #00AD9F;
+  border-right: 5px solid #00AD9F;
+  height: 50vh;
+  width: 85%;
+  object-fit: contain;
+  padding: 20px;
+  color: #2d2d2d;
+  animation: transitionRight 3s;
+  transition: 1s;
+  justify-content: center;
+
+}
+
+.photoDrawer img{
+  height: inherit
+  width:inherit;
+object-fit: contain;
 padding: 20px;
-color: #2d2d2d;
+}
 
-animation: transitionRight 5s
+.dots{
+  position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+height: 40px;
+width: 30vh;
+left: 50vw;
+top: 10vh;
+transform: translateX(-50%);
+}
+
+.dot{
+height: 100%;
+width: 40px;
+border-radius: 50%;
+background-color: #2d2d2d;
+transition: 0.5s
+
+
+
 
 }
+
 
 
 @keyframes transitionLeft {
-  0%   {transform: translateX(100%);}
+  0%   {transform: translateX(110%);}
   100% {transform: translateX(0%);}
 }
 
 @keyframes transitionRight {
-  0%   {transform: translateX(-100%);}
+  0%   {transform: translateX(-110%);}
   100% {transform: translateX(0%);}
 }
 
