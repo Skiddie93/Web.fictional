@@ -872,7 +872,6 @@ align-items: flex-end;
 height: 70vh;
 width: 80vw;
 left: 50vw;
-top: 0vh;
 transform: translateX(-50%);
 
 
@@ -901,8 +900,7 @@ font-size: 1.4em;
 padding: 20px;
 color: #2d2d2d;
 transition: 1s;
-animation: transitionLeft 3s
-
+animation: transitionLeft 3s;
 }
 
 .aboutPicture{
@@ -920,7 +918,6 @@ animation: transitionLeft 3s
   border-right: 5px solid #00AD9F;
   height: 50vh;
   width: 85%;
-  object-fit: contain;
   padding: 20px;
   color: #2d2d2d;
   animation: transitionRight 3s;
@@ -930,8 +927,7 @@ animation: transitionLeft 3s
 }
 
 .photoDrawer img{
-  height: inherit
-  width:inherit;
+width:inherit;
 object-fit: contain;
 padding: 20px;
 }
@@ -946,6 +942,7 @@ width: 30vh;
 left: 50vw;
 top: 10vh;
 transform: translateX(-50%);
+
 }
 
 .dot{
@@ -954,9 +951,6 @@ width: 40px;
 border-radius: 50%;
 background-color: #2d2d2d;
 transition: 0.5s
-
-
-
 
 }
 
@@ -1152,9 +1146,10 @@ width: 100vw;
 left: 50vw;;
 bottom: default;
 top: 10vh;
-font-size: 1.2rem;
+font-size: 1.1rem;
 transform: translateX(-50%);
 margin-bottom: 20px;
+z-index: 0;
 
 
 }
@@ -1412,6 +1407,79 @@ font-size: 1.9rem;
    width: 50px;
 
    }
+   /*About us page_____________________________________________________________________________*/
 
+   .aboutusPage{
+   flex-direction: column;
+   align-items: center;
+   width: 80vw;
+   height: auto;
+   padding-top: 7vh;
+
+   }
+
+   .aboutDescription{
+
+
+   width:100%;
+
+
+
+
+
+   }
+
+   .aboutDescription p{
+   border-bottom: 0px;
+   border-top: 5px solid #F24959;
+   border-left: 5px solid #F24959;
+   height: 30vh;
+   font-size: 1em;
+   animation: transitionLeftVertical 3s;
+   }
+
+   .aboutPicture{
+     width:100%;
+
+
+   }
+
+   .photoDrawer{
+     border-top: 0px;
+     border-bottom: 5px solid #00AD9F;
+     border-right: 5px solid #00AD9F;
+     height: 250px;
+     width: 100%;
+     animation: transitionRightVertical 3s;
+
+   }
+
+   .photoDrawer img{
+  height: inherit;
+   padding:0px;
+   padding-bottom: 20px;
+
+   }
+
+   .dots{
+   width: 200px;
+   top: 0px;
+   margin-top: 50px;
+   margin-bottom: 25px;
+   }
+
+
+
+   }
+
+   @keyframes transitionLeftVertical {
+     0%   {transform: translateY(110%);}
+     100% {transform: translateY(0%);}
+   }
+
+   @keyframes transitionRightVertical {
+     0%   {transform: translateY(-110%);}
+     100% {transform: translateY(0%);}
+   }
 
  }
