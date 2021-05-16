@@ -1,12 +1,8 @@
 
 var updown;
 var i = 0;
-
 var tekst = "<button>Contact Us!</button>"
 var res = tekst.split("")
-
-console.log(res.length);
-
 
 function change(){
 
@@ -29,14 +25,9 @@ function change(){
 
     }else if (a<=h) {
       window.scrollTo(0,0)
-
-
     }
-
-
   }
-
-   }
+}
 
 
 
@@ -51,7 +42,6 @@ function change(){
     }
       return updown
    }
-
 
 
       function landingAnimation() {
@@ -109,14 +99,5 @@ function change(){
 
 
       }
-
-
-
-
-
-
-
-
-
 
  document.getElementById("body").addEventListener("wheel", change);

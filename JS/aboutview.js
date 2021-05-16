@@ -1,11 +1,10 @@
 var previousDot=0
 const aboutChild = document.getElementById('aboutChild').children
 const dotsChild = document.getElementById('dots').children
-const itemLeft = aboutChild[0].children[0];
-const itemRight = aboutChild[1].children[0];
-const aniCheck = document.getElementById("aniCheck");
-var a = () => {return window.innerWidth < 812};
-a = a();
+var itemLeft = document.getElementsByClassName("textDrawer")[0];
+var itemRight = document.getElementsByClassName("photoDrawer")[0];;
+var state = () => {return window.innerWidth < 812};
+state = state();
 var translateFirst
 var translateSecond
 var translateThird
@@ -24,25 +23,25 @@ for (let i = 0; i < dotsChild.length; i++) {
 
 
   if (i!=previousDot) {
-    aboutChild[0].childNodes[1].style.transform= translateFirst;
-    aboutChild[1].childNodes[1].style.transform= translateSecond;
+    itemLeft.style.transform= translateFirst;
+    itemRight.style.transform= translateSecond;
 
-    aniCheck.addEventListener("transitionend", function(){
+    itemRight.addEventListener("transitionend", function(){
       switch (i) {
         case 0:
-            itemLeft.innerHTML= "The HyperText Markup Language, or HTML(HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript."
+            itemLeft.innerHTML= "<h1>HTML</h1><p>The HyperText Markup Language, or HTML(HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>"
             itemRight.innerHTML= "<img src='./media/kofetarica.jpg' alt=''>"
 
           break;
 
         case 1:
-            itemLeft.innerHTML="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript."
+            itemLeft.innerHTML="<h1>CSS</h1><p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.<p>"
             itemRight.innerHTML= "<img src='./media/vangogh.jpg' alt=''>"
 
           break;
 
         case 2:
-              itemLeft.innerHTML="JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions."
+              itemLeft.innerHTML="<h1>JavaScript</h1><p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>"
               itemRight.innerHTML= "<img src='./media/scream.jpg' alt=''>"
 
             break;
@@ -60,20 +59,21 @@ for (let i = 0; i < dotsChild.length; i++) {
 
 
 function listenResize(){
-  if (window.innerWidth<812 && a==true ) {
-    a =false
-     translateFirst= "translateY(110%)"
-     translateSecond="translateY(-110%)"
-     translateThird="translateY(0%)"
-  }else if(window.innerWidth>812 && a==false ){
-      a= true
-       translateFirst= "translateX(110%)"
-       translateSecond="translateX(-110%)"
-       translateThird="translateX(0%)"
+  if (window.innerWidth<812 && state==true ) {
+    state = false
+    translateFirst= "translateY(110%)"
+    translateSecond="translateY(-110%)"
+    translateThird="translateY(0%)"
+  }else if(window.innerWidth>812 && state==false ){
+
+      state = true
+      translateFirst= "translateX(110%)"
+      translateSecond="translateX(-110%)"
+      translateThird="translateX(0%)"
   }
 }
 
 
-aniCheck.addEventListener('animationend', switchContnent);
+itemRight.addEventListener('animationend', switchContnent);
 
 window.addEventListener('resize', listenResize);
